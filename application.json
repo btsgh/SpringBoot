@@ -7,6 +7,14 @@
     {
       "id": "Page2",
       "isDefault": false
+    },
+    {
+      "id": "App_detailes",
+      "isDefault": false
+    },
+    {
+      "id": "Neighbours",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -14,8 +22,6 @@
   "unreadCommentThreads": 0,
   "color": "#D9E7FF",
   "icon": "pie-chart",
-  "unpublishedCustomJSLibs": [],
-  "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,
