@@ -1667,8 +1667,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "App_detailes_SelectQuery",
+              "id": "pgAdmin2_JSObject1.getSchemas",
               "name": "SelectQuery",
+              "collectionId": "pgAdmin2_JSObject1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
