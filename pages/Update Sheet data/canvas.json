@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "View data",
-    "slug": "view-data",
+    "name": "Update Sheet data",
+    "slug": "update-sheet-data",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 590,
+          "bottomRow": 600,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -30,7 +30,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 6,
+              "topRow": 8,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -46,25 +46,24 @@
                   "key": "boxShadow"
                 },
                 {
-                  "key": "primaryColumns.id.computedValue"
-                },
-                {
-                  "key": "primaryColumns.name.computedValue"
-                },
-                {
-                  "key": "primaryColumns.gender.computedValue"
-                },
-                {
-                  "key": "primaryColumns.email.computedValue"
-                },
-                {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.Item.computedValue"
+                },
+                {
+                  "key": "primaryColumns.CustomerName.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Table.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rowIndex.computedValue"
                 }
               ],
-              "leftColumn": 1,
+              "leftColumn": 3,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
-              "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "isVisible": true,
@@ -99,17 +98,17 @@
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "ViewData",
+              "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "id",
-                "name",
-                "gender",
-                "email"
+                "Item",
+                "CustomerName",
+                "Table",
+                "rowIndex"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 45,
+              "bottomRow": 36,
               "columnWidthMap": {
                 "task": 245,
                 "step": 62,
@@ -121,13 +120,69 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "id": {
+                "Item": {
                   "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "originalId": "id",
-                  "id": "id",
-                  "alias": "id",
+                  "originalId": "Item",
+                  "id": "Item",
+                  "alias": "Item",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Item",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Item\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "CustomerName": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "CustomerName",
+                  "id": "CustomerName",
+                  "alias": "CustomerName",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "CustomerName",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"CustomerName\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Table": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "Table",
+                  "id": "Table",
+                  "alias": "Table",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
@@ -142,23 +197,23 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "id",
+                  "label": "Table",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{ViewData.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Table\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "name": {
+                "rowIndex": {
                   "allowCellWrapping": false,
-                  "index": 1,
+                  "index": 3,
                   "width": 150,
-                  "originalId": "name",
-                  "id": "name",
-                  "alias": "name",
+                  "originalId": "rowIndex",
+                  "id": "rowIndex",
+                  "alias": "rowIndex",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -170,76 +225,20 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "name",
+                  "label": "rowIndex",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{ViewData.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "gender": {
-                  "allowCellWrapping": false,
-                  "index": 5,
-                  "width": 150,
-                  "originalId": "gender",
-                  "id": "gender",
-                  "alias": "gender",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "gender",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{ViewData.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"gender\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "email": {
-                  "allowCellWrapping": false,
-                  "index": 7,
-                  "width": 150,
-                  "originalId": "email",
-                  "id": "email",
-                  "alias": "email",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "email",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{ViewData.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"email\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rowIndex\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 }
               },
-              "key": "cqpod2lazs",
+              "key": "c81uch7moq",
               "isDeprecated": false,
-              "rightColumn": 57,
+              "rightColumn": 37,
               "textSize": "0.875rem",
-              "widgetId": "cdapkxwwhk",
-              "tableData": "{{Select_few.data}}",
+              "widgetId": "rsel4e3mk5",
+              "tableData": "{{fetch_new_orders.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -254,10 +253,10 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "View data_Select_few",
-              "name": "Select_few",
+              "id": "Update Sheet data_fetch_new_orders",
+              "name": "fetch_new_orders",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
+              "pluginType": "SAAS",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
@@ -265,7 +264,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "View data",
+        "id": "Update Sheet data",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -276,5 +275,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63a038343dcfb967b6673fdb_63a051fe3dcfb967b667406f"
+  "gitSyncId": "63a038343dcfb967b6673fdb_63a065cb3dcfb967b6674085"
 }

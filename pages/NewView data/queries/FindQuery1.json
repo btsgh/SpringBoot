@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "NewView data",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -110,7 +110,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_FindQuery1",
+  "id": "NewView data_FindQuery1",
   "deleted": false,
   "gitSyncId": "639febca326af108c6f82d61_63a016aa7023dd6a64850ff4"
 }
