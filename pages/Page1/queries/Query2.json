@@ -26,10 +26,12 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
-    "isValid": true,
-    "invalids": [],
+    "isValid": false,
+    "invalids": [
+      "Unable to find datasource 63a41c279fdb9716b26796ee"
+    ],
     "messages": [],
     "jsonPathKeys": [],
     "userSetOnLoad": false,
