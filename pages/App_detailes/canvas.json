@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 71,
+          "version": 74,
           "minHeight": 890,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -1667,17 +1667,16 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "pgAdmin2_JSObject1.getSchemas",
+              "id": "App_detailes_SelectQuery",
               "name": "SelectQuery",
-              "collectionId": "pgAdmin2_JSObject1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "data_table.sortOrder.order || \"ASC\"",
+                "(data_table.pageNo - 1) * data_table.pageSize",
                 "data_table.pageSize",
                 "data_table.searchText || \"\"",
-                "(data_table.pageNo - 1) * data_table.pageSize",
-                "data_table.sortOrder.column || 'app_id'"
+                "data_table.sortOrder.column || 'app_id'",
+                "data_table.sortOrder.order || \"ASC\""
               ],
               "timeoutInMillisecond": 10000
             }

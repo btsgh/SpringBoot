@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 71,
+          "version": 74,
           "minHeight": 890,
           "parentColumnSpace": 1,
           "dynamicTriggerPathList": [],
@@ -2087,11 +2087,11 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "data_table.sortOrder.order || \"ASC\"",
+                "(data_table.pageNo - 1) * data_table.pageSize",
                 "data_table.pageSize",
                 "data_table.searchText || \"\"",
                 "data_table.sortOrder.column || 'age'",
-                "(data_table.pageNo - 1) * data_table.pageSize"
+                "data_table.sortOrder.order || \"ASC\""
               ],
               "timeoutInMillisecond": 10000
             }
