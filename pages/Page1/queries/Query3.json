@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Query2",
+    "name": "Query3",
     "datasource": {
       "name": "mysql",
       "pluginId": "mysql-plugin",
@@ -26,12 +26,10 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
-    "isValid": false,
-    "invalids": [
-      "Unable to find datasource 63a41c279fdb9716b26796ee"
-    ],
+    "isValid": true,
+    "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
     "userSetOnLoad": false,
@@ -39,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Query2",
+  "id": "Page1_Query3",
   "deleted": false,
-  "gitSyncId": "639febca326af108c6f82d61_63a017137023dd6a64850ffb"
+  "gitSyncId": "63a424a39fdb9716b26798fc_63a5611424f48c4bc0cb4ced"
 }
