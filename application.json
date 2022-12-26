@@ -1,6 +1,10 @@
 {
   "pages": [
     {
+      "id": "Investors",
+      "isDefault": false
+    },
+    {
       "id": "Page1",
       "isDefault": true
     },
@@ -15,13 +19,34 @@
     {
       "id": "Data Page",
       "isDefault": false
+    },
+    {
+      "id": "Page4",
+      "isDefault": false
+    },
+    {
+      "id": "Public.users",
+      "isDefault": false
+    },
+    {
+      "id": "Neighbours",
+      "isDefault": false
+    },
+    {
+      "id": "Page5",
+      "isDefault": false
+    },
+    {
+      "id": "Neighbours2",
+      "isDefault": false
     }
   ],
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
-  "color": "#D9E7FF",
-  "icon": "pie-chart",
+  "color": "#C7F3E3",
+  "icon": "medical",
+  "unpublishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,
